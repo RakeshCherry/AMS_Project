@@ -41,6 +41,16 @@ function App() {
       localStorage.removeItem('rememberMe');
     }
 
+    let validUsername, validPassword;
+
+    if(selectedUser === "admin"){
+      validUsername = "admin";
+      validPassword = "1234";
+    }else if(selectedUser === "employee"){
+      validUsername = "employee";
+      validPassword = "4321";
+    }
+
     const isUserCorrect = user === "admin";
     const isPasswordCorrect = password === "1234";
 
