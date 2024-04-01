@@ -51,8 +51,8 @@ function App() {
       validPassword = "4321";
     }
 
-    const isUserCorrect = user === "admin";
-    const isPasswordCorrect = password === "1234";
+    const isUserCorrect = user === validUsername;
+    const isPasswordCorrect = password === validPassword;
 
     setUserMsg(!isUserCorrect);
     setPasswordMsg(!isPasswordCorrect);
