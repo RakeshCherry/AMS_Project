@@ -56,7 +56,6 @@ function App() {
 
     setUserMsg(!isUserCorrect);
     setPasswordMsg(!isPasswordCorrect);
-
     if (isUserCorrect) {
       setUserMsg(false);
     }
