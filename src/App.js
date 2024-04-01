@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import logoImage from './assets/logo.png'
+import logoImage from './assets/logo.png';
 import "bootstrap/dist/css/bootstrap.min.css";
+import passwordEye from './assets/PasswordEye.png';
+
 
 function App() {
   const [user, setUser] = useState("");
@@ -10,6 +12,11 @@ function App() {
   const [passwordMsg, setPasswordMsg] = useState(false);
   const [rememberMe, setRememberMe] = useState(false);
   const [selectedUser, setSelectedUser] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
+  };
 
   useEffect(() => {
     const storedUsername = localStorage.getItem('user');
@@ -144,14 +151,23 @@ function App() {
                 <label className="userLabel mb-2 mt-3" htmlFor="password">
                   Password
                 </label>
+                <div className="password-input-container">
                 <input
-                  type="password"
+                  type={showPassword ? 'text' : 'password'}
                   id="password"
-                  className="userInput px-4"
+                  className="userInput px-4 w-100"
                   value={password}
                   autoComplete="current-password"
                   onChange={(e) => setPassword(e.target.value)}
+                  
                 />
+                <img
+                  src={passwordEye}
+                  alt="Toggle Password Visibility"
+                  className="eye-icon"
+                  onClick={togglePasswordVisibility}
+                  />
+                </div>
                 {passwordMsg ? (
                   <div className="text-danger">Incorrect Password</div>
                 ) : (

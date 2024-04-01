@@ -140,9 +140,22 @@ h1{
   border-radius: 1rem;
   border: 1.05px solid rgba(206, 212, 218, 1);
   font-size: 20px;
-
+  padding-right: 40px; /* Adjust the padding to accommodate the eye icon */
 }
 
+.password-input-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
 .text-danger{
   margin-left: 10px;
 }
