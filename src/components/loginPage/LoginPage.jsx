@@ -5,7 +5,7 @@ import logoImage from '../../assets/logo.png'
 import "bootstrap/dist/css/bootstrap.min.css";
 import passwordEye from '../../assets/PasswordEye.png';
 import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function LoginPage() {

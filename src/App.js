@@ -4,6 +4,8 @@ import LoginPage from "./components/loginPage/LoginPage";
 import Admin from "./components/AdminDashboard/Admin";
 import User from "./components/UserDashboard/User";
 import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css'
+
 
 
 
