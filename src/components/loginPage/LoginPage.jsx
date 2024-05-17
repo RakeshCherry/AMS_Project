@@ -4,6 +4,8 @@ import "../loginPage/LoginPage.css";
 import logoImage from '../../assets/logo.png'
 import "bootstrap/dist/css/bootstrap.min.css";
 import passwordEye from '../../assets/PasswordEye.png';
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 
 function LoginPage() {
@@ -36,7 +38,7 @@ function LoginPage() {
     e.preventDefault();
 
     if(!selectedUser){
-      alert("Please select a user (Admin or Employee)!");
+      toast.error("Please select a user (Admin or Employee)!");
       return;
     }
 
@@ -91,7 +93,7 @@ function LoginPage() {
         </div>
         <div className="container_1">
           <h1>Welcome to</h1>
-          <span className="kitGlobal">KIT Global Technologies.</span>
+          <span className="kitGlobal">RC Global Tech</span>
           <p className="kitPara">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
             itaque accusantium odio, soluta, corrupti aliquam quibusdam tempora
