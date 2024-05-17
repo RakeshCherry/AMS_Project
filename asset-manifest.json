@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/AMS_Project/static/css/main.78482260.css",
-    "main.js": "/AMS_Project/static/js/main.c062b21e.js",
-    "static/js/453.8ab44547.chunk.js": "/AMS_Project/static/js/453.8ab44547.chunk.js",
-    "index.html": "/AMS_Project/index.html",
-    "main.78482260.css.map": "/AMS_Project/static/css/main.78482260.css.map",
-    "main.c062b21e.js.map": "/AMS_Project/static/js/main.c062b21e.js.map",
-    "453.8ab44547.chunk.js.map": "/AMS_Project/static/js/453.8ab44547.chunk.js.map"
+    "main.css": "/AMS_logIn_Page/static/css/main.78482260.css",
+    "main.js": "/AMS_logIn_Page/static/js/main.c062b21e.js",
+    "static/js/453.8ab44547.chunk.js": "/AMS_logIn_Page/static/js/453.8ab44547.chunk.js",
+    "index.html": "/AMS_logIn_Page/index.html",
+    "main.78482260.css.map": "/AMS_logIn_Page/static/css/main.78482260.css.map",
+    "main.c062b21e.js.map": "/AMS_logIn_Page/static/js/main.c062b21e.js.map",
+    "453.8ab44547.chunk.js.map": "/AMS_logIn_Page/static/js/453.8ab44547.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.78482260.css",
